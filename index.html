@@ -41,14 +41,17 @@
 
 
     <script type="text/javascript" src="js/avatar.js"></script>
-    <script type="d2a4a3b886822f4be62a34b3-text/javascript">
-        function audioPlay() {
-            var audio = document.getElementById("audio");
-            audio.volume = 0.9;
-                  audio.currentTime = 0;
-            audio.play();
-        }
-      </script>
+<script type="d2a4a3b886822f4be62a34b3-text/javascript"
+document.addEventListener('DOMContentLoaded', () => {
+    const audioElement = document.getElementById(audio) as HTMLAudioElement;
+
+    if (audioElement) {
+        audioElement.play().catch(error => {
+            console.error('Error playing audio:', error);
+        });
+    }
+});
+</script>
     <script type="d2a4a3b886822f4be62a34b3-text/javascript">
 
         </script>
